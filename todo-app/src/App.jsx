@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import deleteIcon from "/delete.svg";
 import editIcon from "/edit.svg";
 import EditBox from "./EditBox";
@@ -8,7 +8,9 @@ import InputBox from "./InputBox";
 function App() {
     const [task, setTask] = useState("");
     const [edit, setEdit] = useState("");
-    const [taskList, setTaskList] = useState([]);
+    const [taskList, setTaskList] = useState(
+        JSON.parse(localStorage.getItem("data")) || []
+    );
     const [editPrompt, setEditPrompt] = useState(false);
     const [warningPrompt, setWarningPrompt] = useState(false);
     const [editID, setEditID] = useState(null);
@@ -52,6 +54,10 @@ function App() {
     const handleEnterKey = (e) => {
         if (e.key === "Enter") submitHandler();
     };
+
+    useEffect(() => {
+        localStorage.setItem("data", JSON.stringify(taskList));
+    }, [taskList]);
 
     return (
         <>

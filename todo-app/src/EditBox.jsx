@@ -7,6 +7,7 @@ function editBox({ allTask, id, updatedTaskList, close }) {
     const editHandler = () => {
         if (editData === "") {
             close();
+            return;
         }
 
         taskToEdit[0].title = editData;
