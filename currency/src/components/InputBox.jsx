@@ -17,7 +17,7 @@ function InputBox({
             <div className="outerWrapper flex justify-between mt-3">
                 <div className="gapContainer flex">
                     <div className="inputFieldWrapper flex  flex-col ">
-                        <label className="inputFieldHeader mb-2 text-gray-500 select-none">
+                        <label className="inputFieldHeader mb-2 text-gray-700 select-none">
                             <p>{label}</p>
                         </label>
                         <div className="inputField ">
@@ -37,7 +37,7 @@ function InputBox({
                     </div>
                 </div>
                 <div className="optionSelectWrapper">
-                    <div className="optionSelectHeader text-gray-500 mb-2 select-none">
+                    <div className="optionSelectHeader text-gray-700 mb-2 select-none">
                         <p>Currency Type</p>
                     </div>
                     <select

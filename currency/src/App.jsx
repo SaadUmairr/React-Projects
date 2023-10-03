@@ -69,6 +69,7 @@ function App() {
                         onCurrencyChange={(currency) => setToValue(currency)}
                         selectCurrency={toValue || "inr"}
                         amountDisable ={true}
+                        enterKey = {handleEnterKey}
                     />
                     <button
                         className="flex w-full justify-center text-white bg-blue-700 rounded-lg text-xl p-3 mt-4 active:scale-95"
