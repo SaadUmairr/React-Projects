@@ -3,7 +3,6 @@ import email from "../../assets/email.svg";
 import phone from "../../assets/phone.svg";
 import address from "../../assets/address.svg";
 
-
 function Contact() {
     return (
         <div className="contactInfoContainer flex flex-wrap justify-center items-center mt-32">
@@ -38,17 +37,32 @@ function Contact() {
                 <p className="text-2xl font-black text-center">GET IN TOUCH</p>
 
                 <div className="addressDetail flex justify-between items-center mt-3">
-                    <img src={address} alt="Address:" width={20}  className="mr-4"/>
+                    <img
+                        src={address}
+                        alt="Address:"
+                        width={20}
+                        className="mr-4"
+                    />
                     <p className="text-sm">204, Jasola Tower-A, Delhi-110026</p>
-                </div>                
+                </div>
                 <div className="phoneDetail flex justify-between items-center mt-3">
-                    <img src={phone} alt="Address:" width={20}  className="mr-4"/>
+                    <img
+                        src={phone}
+                        alt="Address:"
+                        width={20}
+                        className="mr-4"
+                    />
                     <p className="text-sm text-center">+91-9812983467</p>
-                </div>                
+                </div>
                 <div className="emailDetail flex justify-between items-center mt-3">
-                    <img src={email} alt="Address:" width={20}  className="mr-4"/>
+                    <img
+                        src={email}
+                        alt="Address:"
+                        width={20}
+                        className="mr-4"
+                    />
                     <p className="text-sm">contact@tripmaker.com</p>
-                </div>                
+                </div>
             </div>
         </div>
     );
