@@ -1,7 +1,7 @@
 import React from "react";
-import email from "../../assets/email.svg";
-import phone from "../../assets/phone.svg";
-import address from "../../assets/address.svg";
+import email from "../../assets/contact/email.svg";
+import phone from "../../assets/contact/phone.svg";
+import address from "../../assets/contact/address.svg";
 
 function Contact() {
     return (

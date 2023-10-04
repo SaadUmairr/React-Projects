@@ -8,7 +8,7 @@ function Home() {
                     <img
                         src="src/assets/main-img.jpg"
                         alt="Main Image"
-                        className="w-80 m-3 rounded"
+                        className="w-3/4 m-3 rounded"
                     />
                 </div>
                 <div className="imgMainDescription mx-2  w-2/5 flex flex-col justify-between">

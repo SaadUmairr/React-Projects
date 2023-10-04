@@ -5,6 +5,7 @@
 }
 body {
     background-image: linear-gradient(to right, #e5e7eb, #93c5fd, #e5e7eb);
+    
 }
 @tailwind base;
 @tailwind components;

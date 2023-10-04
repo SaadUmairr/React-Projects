@@ -58,11 +58,29 @@ function Header() {
                     </ul>
                 </div>
                 <div className="LoginSignUpButton flex w-1/5 ">
-                    <button className="w-20 px-1 mx-2 bg-gray-700 text-white font-bold rounded-lg ">
-                        LOG IN
+                    <button className="w-24 px-1 mx-2 bg-gray-700 text-white font-bold rounded-lg ">
+                        <NavLink
+                            to="/login"
+                            className={({ isActive }) =>
+                                `block duration-300 ${
+                                    isActive ? "scale-95" : ""
+                                }`
+                            }
+                        >
+                            LOG IN
+                        </NavLink>
                     </button>
                     <button className="w-36 py-3 mx-1 bg-blue-700 text-white font-bold rounded-lg ">
-                        SIGN UP
+                        <NavLink
+                            to="/signup"
+                            className={({ isActive }) =>
+                                `block duration-300 ${
+                                    isActive ? "scale-95" : ""
+                                }`
+                            }
+                        >
+                            SIGN UP
+                        </NavLink>
                     </button>
                 </div>
             </nav>

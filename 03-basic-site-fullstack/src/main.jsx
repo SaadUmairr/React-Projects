@@ -1,7 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { About, Contact, Footer, Header, Home } from "./components";
+import {
+    About,
+    Contact,
+    Footer,
+    Header,
+    Home,
+    Login,
+    SignUp,
+} from "./components";
 import {
     Route,
     Router,
@@ -17,6 +25,8 @@ const route = createBrowserRouter(
             <Route path="" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<SignUp />} />
         </Route>
     )
 );
