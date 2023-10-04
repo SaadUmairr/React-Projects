@@ -11,3 +11,4 @@ export default function useCurrencyInfo(currency) {
     }, [currency]);
     return data;
 }
+    

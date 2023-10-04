@@ -1,10 +1,12 @@
 import React from "react";
-
+import useCreateUser from "../../hooks/useCreateUser";
 function SignUp() {
     return (
         <div className="SignUpContainer absolute flex justify-center items-center w-full h-screen overflow-hidden">
             <div className="signUpBox">
-                <p className="text-4xl text-center font-bold mb-5">Create your account</p>
+                <p className="text-4xl text-center font-bold mb-5">
+                    Create your account
+                </p>
                 <form method="post" className="flex flex-col">
                     <input
                         type="text"
