@@ -46,7 +46,7 @@ function App() {
             <div className="w-full flex justify-center items-center h-screen ">
                 <div className="outer w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                     <InputBox
-                        label="FROM"
+                        label="FROM"    
                         amount={amount}
                         onCurrencyChange={(currency) => setFromValue(currency)}
                         selectCurrency={fromValue || "usd"}
@@ -68,8 +68,8 @@ function App() {
                         currencyOptions={optionKeys}
                         onCurrencyChange={(currency) => setToValue(currency)}
                         selectCurrency={toValue || "inr"}
-                        amountDisable ={true}
-                        enterKey = {handleEnterKey}
+                        amountDisable={true}
+                        enterKey={handleEnterKey}
                     />
                     <button
                         className="flex w-full justify-center text-white bg-blue-700 rounded-lg text-xl p-3 mt-4 active:scale-95"
@@ -84,7 +84,6 @@ function App() {
                             from={fromValue}
                             to={toValue}
                             Rate={currencyData[toValue]}
-                            
                         />
                     )}
                 </div>
