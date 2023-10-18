@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { login, logout } from "./store/authSlice";
 import authService from "./appwrite/auth";
+import { login, logout } from "./store/authSlice";
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ function App() {
                 else dispatch(logout());
             })
             .catch(() => console.log("unable to fetch user login status"))
-            .finally(setLoading(false)); 
+            .finally(setLoading(false));
     }, [loading]);
 
     return !loading ? (
