@@ -1,5 +1,5 @@
+import { Account, Client, ID } from "appwrite";
 import config from "../config/config";
-import { Client, Account } from "appwrite";
 
 export class AuthService {
     client = new Client();
@@ -19,7 +19,7 @@ export class AuthService {
                 name
             );
             if (userAccount) return this.login({ email, password });
-            else return null;
+            else return userAccount;
         } catch (error) {
             console.log("Appwrite : createAccount error :: ", error);
         }
